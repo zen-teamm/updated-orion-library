@@ -58,3 +58,74 @@ local Section = Tab:AddSection({
 })
 ```
 ## Creating a Toggle
+```lua
+Tab:AddToggle({
+	Name = "This is a toggle!", -- Toggle name
+	Default = false,
+	Callback = function(Value)
+		print(Value) -- What happens when you turn on and off the toggle
+	end    
+})
+```
+
+## Creating a Color Picker
+```lua
+Tab:AddColorpicker({
+	Name = "Colorpicker", -- Color picker name
+	Default = Color3.fromRGB(255, 0, 0), -- Default color
+	Callback = function(Value)
+		print(Value) -- What happens when you change the color
+	end	  
+```
+
+## Creating a Slider
+```lua
+Tab:AddSlider({
+	Name = "Slider", -- Slider name
+	Min = 0, -- Minimum value
+	Max = 20, -- Max Value
+	Default = 5, -- Default value
+	Color = Color3.fromRGB(255,255,255), -- Slider color
+	Increment = 1, -- The increment of the value when you drag on the slider
+	ValueName = "bananas", -- Value name
+	Callback = function(Value)
+		print(Value) -- What happens when you change the slider's value
+	end    
+})
+```
+
+## Creating a Label
+```lua
+Tab:AddLabel("Label")
+```
+
+## Creating a Textbox
+```lua
+Tab:AddTextbox({
+	Name = "Textbox", -- Textbox name
+	Default = "Orion on top", -- Default box input
+	TextDisappear = true, -- If the text disappears after you press enter
+	Callback = function(Value)
+		print(Value) -- What happens when you type something in the textbox
+	end	  
+})
+```
+
+## Creating a Notification
+```lua
+OrionLib:MakeNotification({
+	Name = "Title!", -- Notif Title
+	Content = "Notification content... what will it say??", -- Notif content
+	Image = "rbxassetid://4483345998", -- Notif Image
+	Time = 5 -- How much long the notif will stay 
+})
+```
+
+# EXTRA
+## Destroying the GUI
+```lua
+OrionLib:Destroy()
+```
+
+# Thanks for using
+Thanks for using the Updated Orion Library! It will soon get an update with more features! We only have put the necessary features for now!
