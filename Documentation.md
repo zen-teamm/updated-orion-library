@@ -71,10 +71,10 @@ Tab:AddToggle({
 ## Creating a Color Picker
 ```lua
 Tab:AddColorpicker({
-	Name = "Colorpicker",
-	Default = Color3.fromRGB(255, 0, 0),
+	Name = "Colorpicker", -- Colorpicker name
+	Default = Color3.fromRGB(255, 0, 0), -- Default color
 	Callback = function(Value)
-		print(Value)
+		print(Value) -- What happens when you change the color
 	end	  
 })
 ```
