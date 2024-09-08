@@ -71,11 +71,12 @@ Tab:AddToggle({
 ## Creating a Color Picker
 ```lua
 Tab:AddColorpicker({
-	Name = "Colorpicker", -- Color picker name
-	Default = Color3.fromRGB(255, 0, 0), -- Default color
+	Name = "Colorpicker",
+	Default = Color3.fromRGB(255, 0, 0),
 	Callback = function(Value)
-		print(Value) -- What happens when you change the color
+		print(Value)
 	end	  
+})
 ```
 
 ## Creating a Slider
